@@ -1,13 +1,15 @@
 #player {
   position: absolute;
   width: 75vw;
-  height: 42.1875vw; }
+  height: 42.1875vw;
+  margin-right: 10px; }
+
+#player_wrapper {
+  position: relative;
+  float: left; }
 
 #chat {
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: 23vw; }
+  position: relative;
+  float: right; }
 
 /*# sourceMappingURL=css.css.map */
