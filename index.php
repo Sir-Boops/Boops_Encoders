@@ -1,6 +1,13 @@
 <?php
 
+    if($_GET != null){
+        
+        if(strtolower($_GET["chat"]) == "twitch"){
+            
+            $chat = '<iframe style="border: hidden; position: absolute; height: 100%; width: 100%;" src="https://www.twitch.tv/' . $_GET["channel"] . '/chat">';
 
+        }
+    }   
 
 ?>
 
@@ -16,6 +23,9 @@
             <video style="position: absolute; height: 100%; width: 100%;" class="video-js" controls data-setup='{}'>
                 <source src="rtmp://rtmp.boops.me/encode/" type="rtmp/mp4"></source>
             </video>
+        </div>
+        <div id="chat">
+            <?php echo($chat); ?>
         </div>
     </body>
 </html>
