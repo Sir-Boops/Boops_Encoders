@@ -1,0 +1,9 @@
+@function aspect($width) {
+  @return $width * 9 / 16;
+}
+
+#player {
+    position: absolute;
+    width: 75vw;
+    height: aspect(75vw);
+}
